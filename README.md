@@ -2,15 +2,14 @@
 
 # Simple type checks
 
-The name says it all: This is a minimal helper library for type checking in
-JavaScript. In most cases you will NOT need it. The only case where
-this comes handy when you have to do a lot of type checking in your code.
-In these cases writing multiple `typeof myvalue === 'whatever'` can become
-quite noisy.
+This is a minimal helper library for type checking in JavaScript. In most
+cases you will **NOT** need it. The only case where this comes handy when
+you have to do a lot of type checking in your code. In these cases writing
+multiple `typeof myvalue === 'whatever'` can become quite noisy.
 
 ## API
 
-| function | Check if|
+| function | Check if |
 |---|---|
 | `isUndef`| ...value is `undefined` |
 | `isNull`| ...value is `null` |
