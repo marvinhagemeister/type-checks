@@ -5,6 +5,15 @@
   "main": "dist/index.js",
   "author": "Marvin Hagemeister <marvin@marvinhagemeister.de>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:marvinhagemeister/type-checks.git"
+  },
+  "keywords": [
+    "typecheck",
+    "type",
+    "check"
+  ],
   "scripts": {
     "clean": "rimraf dist/",
     "lint": "tslint 'src/**/*.ts'",
