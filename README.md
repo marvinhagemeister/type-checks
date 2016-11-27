@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/marvinhagemeister/type-checks.svg?branch=master)](https://travis-ci.org/marvinhagemeister/type-checks)
+
 # Simple type checks
 
 The name says it all: This is a minimal helper library for type checking in
