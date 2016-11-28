@@ -27,6 +27,7 @@ describe("isUndef", () => {
     t.equal(isUndef(999), false);
     t.equal(isUndef(""), false);
     t.equal(isUndef("a"), false);
+    t.equal(isUndef(NaN), false);
   });
 });
 
@@ -43,6 +44,7 @@ describe("isNull", () => {
     t.equal(isNull(999), false);
     t.equal(isNull(""), false);
     t.equal(isNull("a"), false);
+    t.equal(isNull(NaN), false);
   });
 });
 
@@ -59,6 +61,7 @@ describe("isNullOrUndef", () => {
     t.equal(isNullOrUndef(999), false);
     t.equal(isNullOrUndef(""), false);
     t.equal(isNullOrUndef("a"), false);
+    t.equal(isNullOrUndef(NaN), false);
   });
 });
 
@@ -75,6 +78,7 @@ describe("isString", () => {
     t.equal(isString(999), false);
     t.equal(isString(""), true);
     t.equal(isString("a"), true);
+    t.equal(isString(NaN), false);
   });
 });
 
@@ -91,6 +95,7 @@ describe("isNumber", () => {
     t.equal(isNumber(999), true);
     t.equal(isNumber(""), false);
     t.equal(isNumber("a"), false);
+    t.equal(isNumber(NaN), false);
   });
 });
 
@@ -107,6 +112,7 @@ describe("isBool", () => {
     t.equal(isBool(999), false);
     t.equal(isBool(""), false);
     t.equal(isBool("a"), false);
+    t.equal(isBool(NaN), false);
   });
 });
 
@@ -123,6 +129,7 @@ describe("isEmpty", () => {
     t.equal(isEmpty(999), false);
     t.equal(isEmpty(""), true);
     t.equal(isEmpty("a"), false);
+    t.equal(isEmpty(NaN), false);
   });
 });
 
@@ -139,6 +146,7 @@ describe("isDate", () => {
     t.equal(isDate(999), false);
     t.equal(isDate(""), false);
     t.equal(isDate("a"), false);
+    t.equal(isDate(NaN), false);
 
     t.equal(isDate(new Date()), true);
   });
@@ -157,6 +165,7 @@ describe("isObject", () => {
     t.equal(isObject(999), false);
     t.equal(isObject(""), false);
     t.equal(isObject("a"), false);
+    t.equal(isObject(NaN), false);
   });
 });
 
