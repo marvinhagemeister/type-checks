@@ -15,7 +15,7 @@ multiple `typeof myvalue === 'whatever'` can become quite noisy.
 | `isNull`| ...value is `null` |
 | `isNullOrUndef`| ...value is `undefined` or `null` |
 | `isString`| ...value is a `string` |
-| `isNumber`| ...value is a `number` |
+| `isNumber`| ...value is a `number`, excluding `NaN` |
 | `isBool`| ...value is a `boolean` |
 | `isDate`| ...value is a `Date`-object |
 | `isFormatDate`| ...value has the format `YYYY-MM-DD` |
