@@ -3,6 +3,7 @@ export const isNull = (val: any) => val === null;
 export const isNullOrUndef = (val: any) => isNull(val) || isUndef(val);
 export const isString = (val: any) => typeof val === "string" || val instanceof String;
 export const isNumber = (val: any) => typeof val === "number" && !isNaN(val);
+export const isNumberOrString = (val: any) => isNumber(val) || isString(val);
 export const isBool = (val: any) => typeof val === "boolean";
 export const isDate = (val: any) => Object.prototype.toString.call(val) === "[object Date]";
 export const isFormatDate = (val: any) => /^\d{4}-\d{2}-\d{2}$/g.test(val);

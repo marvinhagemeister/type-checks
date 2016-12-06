@@ -9,6 +9,7 @@ import {
   isNull,
   isNullOrUndef,
   isNumber,
+  isNumberOrString,
   isObject,
   isString,
   isUndef,
@@ -96,6 +97,23 @@ describe("isNumber", () => {
     t.equal(isNumber(""), false);
     t.equal(isNumber("a"), false);
     t.equal(isNumber(NaN), false);
+  });
+});
+
+describe("isNumberOrString", () => {
+  it("should check if value is a string or a number", () => {
+    t.equal(isNumberOrString(undefined), false);
+    t.equal(isNumberOrString(false), false);
+    t.equal(isNumberOrString(null), false);
+    t.equal(isNumberOrString([]), false);
+    t.equal(isNumberOrString({}), false);
+    t.equal(isNumberOrString(-1), true);
+    t.equal(isNumberOrString(0), true);
+    t.equal(isNumberOrString(1), true);
+    t.equal(isNumberOrString(999), true);
+    t.equal(isNumberOrString(""), true);
+    t.equal(isNumberOrString("a"), true);
+    t.equal(isNumberOrString(NaN), false);
   });
 });
 
