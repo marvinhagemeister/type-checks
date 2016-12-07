@@ -1,6 +1,6 @@
 # Changelog
 
-## next
+## 1.2.1
 
 - Bundle `es`-module to support tree-shaking (via rollup or webpack2)
 
