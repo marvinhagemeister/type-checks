@@ -5,6 +5,7 @@ export const isString = (val: any) => typeof val === "string" || val instanceof 
 export const isNumber = (val: any) => typeof val === "number" && !isNaN(val);
 export const isNumberOrString = (val: any) => isNumber(val) || isString(val);
 export const isBool = (val: any) => typeof val === "boolean";
+export const isFunction = (val: any) => typeof val === "function";
 export const isDate = (val: any) => Object.prototype.toString.call(val) === "[object Date]";
 export const isFormatDate = (val: any) => /^\d{4}-\d{2}-\d{2}$/g.test(val);
 export const isFormatDateTime = (val: any) => /^\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}$/g.test(val);
