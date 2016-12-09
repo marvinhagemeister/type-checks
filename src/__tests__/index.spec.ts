@@ -6,6 +6,7 @@ import {
   isFormatDate,
   isFormatDateTime,
   isFormatDateUTC,
+  isFunction,
   isNull,
   isNullOrUndef,
   isNumber,
@@ -79,6 +80,26 @@ describe("isString", () => {
     t.equal(isString(""), true);
     t.equal(isString("a"), true);
     t.equal(isString(NaN), false);
+  });
+});
+
+describe("isFunction", () => {
+  it("should check if value is a string", () => {
+    t.equal(isFunction(undefined), false);
+    t.equal(isFunction(false), false);
+    t.equal(isFunction(null), false);
+    t.equal(isFunction([]), false);
+    t.equal(isFunction({}), false);
+    t.equal(isFunction(-1), false);
+    t.equal(isFunction(0), false);
+    t.equal(isFunction(1), false);
+    t.equal(isFunction(999), false);
+    t.equal(isFunction(""), false);
+    t.equal(isFunction("a"), false);
+    t.equal(isFunction(NaN), false);
+    /* tslint:disable-next-line */
+    t.equal(isFunction(() => {}), true);
+    t.equal(isFunction(Date), true);
   });
 });
 
