@@ -1,7 +1,7 @@
 {
   "name": "type-checks",
   "version": "1.3.0",
-  "description": "typescript boilerplate project",
+  "description": "Collection of primitive functions to check the type of a given value",
   "main": "dist/index.js",
   "module": "dist/es/index.js",
   "author": "Marvin Hagemeister <marvin@marvinhagemeister.de>",
